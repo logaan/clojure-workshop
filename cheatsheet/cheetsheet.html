@@ -1,0 +1,91 @@
+<style>
+  div { width: 45%; float: left; display: inline-block; padding: 1em; }
+</style>
+
+<h1>Cheatsheet</h1>
+
+<div>
+  <h2 id="control-flow">Control flow</h2>
+  <ul>
+  <li><a href="http://clojure.org/special_forms#if">if</a> Standard if statement.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/and">and</a> Returns true if
+    all arguments to it are true.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/or">or</a> Returns true if any
+    arguments to it are true.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/for">for</a> Looping
+    structure. A single for can represent many nested loops.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/cond">cond</a> Case statement.</li>
+  </ul>
+  <h2 id="collections">Collections</h2>
+  <ul>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/reduce">reduce</a> Will run a
+    function over a collection. The function will be passed the result of the
+    last function call and each item in the collection.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/filter">filter</a> Takes test
+    function and a collection. Returns a new collection with only the items from
+    the first collection that caused the test to pass.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/map">map</a> Takes a function
+    and a collection. Returns a new collection with the result of running the
+    function over each item in the collection. Be careful. It is lazy.</li>
+  <li><a href="http://clojure.github.com/clojure/clojure.core-api.html#clojure.core/mapv">mapv</a> Like map but
+    not lazy. Do not use with infinite sequences.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/concat">concat</a> Joins two
+    or more sequences.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/set">set</a> Turns a sequence
+    into a set.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/first">first</a> Returns first
+    item of a sequence.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/rest">rest</a> Returns all but
+    the first item of a sequence.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/take">take</a> Pulls the first
+    n items out of a sequence.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/take-while">take-while</a>
+    Pulls items out of a sequence until the test function returns false. No
+    further items will be checked.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/range">range</a> Creates a new
+    sequence of numbers. Can be given a lower bound, upper bound and amount to
+    increment by.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/iterate">iterate</a> Creates a
+    sequence by running a function over a value. Then a function over the return
+    value of the first call, and so on.</li>
+  </ul>
+</div>
+
+<div>
+  <h2 id="predicates">Predicates</h2>
+  <ul>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/=">=</a> Equality check.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/+">+</a> Addition.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/-">-</a> Subtraction.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/&gt;">&gt;</a> Greater than.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/&lt;">&lt;</a> Less than.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/mod">mod</a> Modulo.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/rem">rem</a> Remainder.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/even_q">even?</a> Is number even?</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/odd_q">odd?</a> Is number odd?</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/every_q">every?</a> Runs a test
+    function over a collection. Returns true if test passes for each item in
+    collection.</li>
+  </ul>
+  <h2 id="functions">Functions</h2>
+  <ul>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/defn">defn</a> Define a function.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/fn">fn</a> Create a function.</li>
+  </ul>
+  <h2 id="strings">Strings</h2>
+  <ul>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/str">str</a> Convert to string.</li>
+  </ul>
+  <h2 id="naming">Naming</h2>
+  <ul>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/let">let</a> Allows you to
+    name things. Like local variables.</li>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/def">def</a> Give something a
+    global name.</li>
+  </ul>
+  <h2 id="output">Output</h2>
+  <ul>
+  <li><a href="http://clojuredocs.org/clojure_core/clojure.core/def">println</a> Output a
+    string with a newline.</li>
+  </ul>
+</div>

@@ -1,0 +1,24 @@
+I'm going to assume that you're used to writing in a mainstream language. It's
+probably OO. Almost definately imperitive. I'm thinking Java, Python, Ruby,
+maybe Javascript. I'm going to try and share with you what excites me about
+Clojure and how it's different to languages you might know.
+
+Clojure gives developers the power to create new language features. If python
+didn't have list comprehensions, how could you add them? Classes in Javascript
+are design patterns at best. But imagine if you could use your language to
+define new keywords, new syntax. In Clojure you can.
+
+In Clojure code you can reify concepts that are core to your domain. In a web
+application you can create a new controller, directly, rather than using classes
+as intermediaries. For live coding elecontric music you can create a terse
+syntax for defining melodies. This results in clean, readable code. Free of
+mind bending reflection and metaprogramming hackery.
+
+Clojure doesn't come with pattern matching, list comprehensions or static type
+checking. People have created libraries that provide each of these features.
+And the library implementations are as natural to use as if they were
+implemented in the core of Clojure itself. Actually a lot of Clojure is written
+in Clojure: case statements, boolean operators, and looping constructs. I know
+of no other language where these can be elegantly defined in the language
+itself.
+
