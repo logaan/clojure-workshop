@@ -1,0 +1,38 @@
+A free Clojure workshop will be run by MFUG and clj-melb on Saturday the 23rd
+of March. Thoughtworks will kindly host at their offices on level 14, 303
+Collins St. We will begin at 10am and finish at 5pm. Please bring your own
+laptop.
+
+The premisis will be locked on the weekend. Give me a call on 0438 050 887 and
+I'll come and let you in.
+
+The format of the day will be:
+
+- Get everyone set up
+- Introduce the language basics
+- Have everyone solve a few problems
+- Break for lunch
+- Introduce some more advanced features
+- Have everyone work on a program
+
+Experience with some kind of programming is required. There will be several
+experienced Clojurians on hand to help out in any way they can. If you can't
+bring a laptop then contact me beforehand and I'll try to find someone to work
+with you.
+
+We would appreciate it if you could get your machine set up for clojure
+development before the workshop. If everyone comes prepared we'll save a good
+deal of time and be able to cover more. Please install Leiningen (1), it will
+bring a version of Clojure down with it. Also I recommend either the Catnip (2)
+editor or Eclipse (3) with the Counterclockwise plugin (4). Don't stress if
+you're unable get setup, we'll help you out on the day.
+
+If you have any questions or suggestions please email me at
+workshop@logaan.net.
+
+1. https://github.com/technomancy/leiningen
+2. https://github.com/bodil/catnip
+3. http://www.eclipse.org/downloads/
+4. https://code.google.com/p/counterclockwise/
+
+http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/events/106277542/
