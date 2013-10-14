@@ -1,0 +1,87 @@
+Possible motivations for wanting clojure
+----------------------------------------
+x Create first class abstractions like pattern matching, list comprehensions
+  (for loop), and more domain specific ones like defenemy
+- Pure functions for testability
+- Concurrency
+  - No shared mutable state
+  - STM
+- Simpler design
+  - Vars are just names
+  - Functions aren't bound to data
+  - Protocols can provide polymorphism without objects
+  - Multimethods and Hierachies
+  - Namespaces
+- Access to the JVM ecosystem without needing to write verbose java
+  - You can not care about FP and still enjoy clojure
+
+Imperritive V Functional
+------------------------
+Compare functional solutions to imperitive ones. How immutability makes our
+life harder and higher order functions make it easier. Introduce:
+
+- Basic mutation
+  - assoc
+  - update-in
+  - threading macro
+    - person -> with first name -> with surname
+
+- Collection mutation
+  - map
+  - filter
+  - reduce
+  - group-by
+
+The Java World
+--------------
+- The classpath
+- Compiling code
+  - When you run
+  - With gen-class
+- Slow startup time
+
+Nasties
+-------
+- Dense functions
+- Needing to drop down to Java
+  - Situation is improving
+  - Better than having no option
+- No TCO
+  - Recur is fine often
+  - Only perceive issue if you're coming from erlang/scheme
+- Var's eval to their value
+  - foo/bar != #'foo/bar
+
+Namespaces
+----------
+- That annoying underscore hyphen bug thing
+- Must define before using functions
+- (:require ...) (require ')
+- Use, Require, Import
+
+What does real code look like?
+------------------------------
+x Json parsin and generating
+x Parsing xml and grabbing some inner value
+x Doing an sql query
+x Compojure hello world with hiccup
+x Seesaw
+x Unit tests with midje
+
+Resources
+---------
+http://clojure.org/
+http://clojuredocs.org/
+http://clojars.org/
+http://clojure-doc.org/
+
+Alternative Implementations
+---------------------------
+- You can integrate with your existing code
+  - clojure-py
+  - clojure-scheme
+  - ClojureScript
+  - ClojureCLR
+
+
+SEQUENCE ABSTRACTION
